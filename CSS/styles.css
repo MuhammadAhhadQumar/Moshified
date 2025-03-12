@@ -5,6 +5,7 @@
   --heading-color: rgb(27, 7, 96);
   --body-color: rgb(145, 140, 164);
 }
+/* Typography */
 html {
   font-size: 100%;
 }
@@ -44,5 +45,28 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+/* Links */
+a {
+  text-decoration: none;
+}
+.arrow-link {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+}
+.arrow-link::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+.arrow-link:hover::after {
+  margin-left: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .arrow-link {
+    font-size: 1.5rem;
   }
 }
