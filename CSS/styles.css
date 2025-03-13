@@ -257,7 +257,7 @@ a {
   color: #fff;
   font-size: 2.4rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 2.4rem;
 }
 .plan__price {
   font-size: 6rem;
@@ -273,10 +273,20 @@ a {
   font-weight: 300;
   letter-spacing: 1px;
   display: block;
-  margin-top: 10px;
 }
 .plan .list__item {
   margin-bottom: 2rem;
+}
+.plan--popular .card__header {
+  position: relative;
+}
+.plan--popular .card__header::before {
+  display: inline-block;
+  position: absolute;
+  content: url(../images/popular.svg);
+  width: 40px;
+  top: -6px;
+  right: 5%;
 }
 @media screen and (min-width: 1024px) {
   .plan__name {
