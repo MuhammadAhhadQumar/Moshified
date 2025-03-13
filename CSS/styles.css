@@ -201,6 +201,10 @@ a {
   border: 2px solid var(--heading-color);
   transition: background 0.25s;
 }
+.btn--callout {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .btn--outline:hover {
   background: var(--heading-color);
   color: #fff;
@@ -397,5 +401,38 @@ a {
   }
   .testimonial .quote {
     margin-left: 5rem;
+  }
+}
+/* Callout */
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+.callout-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.callout__heading {
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 0;
+}
+.callout .btn {
+  align-self: center;
+  justify-self: center;
+}
+.callout_content {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout_content {
+    text-align: left;
+  }
+  .callout .btn {
+    justify-self: start;
+    margin-left: 0 2rem;
   }
 }
