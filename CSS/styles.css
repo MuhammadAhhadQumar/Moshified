@@ -95,6 +95,7 @@ a {
 }
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .badge {
@@ -245,4 +246,49 @@ a {
 .card--secondary .card__header {
   background: var(--secondary-color);
   color: #fff;
+}
+.card--secondary .badge--secondary {
+  background: #02cdf1;
+}
+
+/* Plans */
+.plan__name {
+  margin: 0;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.plan__price {
+  font-size: 6rem;
+}
+.plan__billing-cycle {
+  font-weight: 300;
+  opacity: 0.8;
+  font-size: 2.4rem;
+  margin-right: 1rem;
+}
+.plan_description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 10px;
+}
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .paln__price {
+    font-size: 5rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+  .plan_description {
+    font-size: 1.7rem;
+  }
 }
