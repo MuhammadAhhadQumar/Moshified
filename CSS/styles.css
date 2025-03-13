@@ -4,6 +4,7 @@
   --accent-color: rgb(255, 52, 0);
   --heading-color: rgb(27, 7, 96);
   --body-color: rgb(145, 140, 164);
+  --darker-body-color: #5c5577;
   --border-color: #ccc;
   --border-radius: 30px;
 }
@@ -314,4 +315,39 @@ a {
 }
 .media__image {
   margin-top: 1rem;
+}
+/* Quote */
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--darker-body-color);
+  line-height: 1.3;
+}
+.quote .media {
+  font-style: normal;
+}
+.quote__author {
+  font-size: 3rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.quote__company {
+  color: var(--heading-color);
+  opacity: 0.4;
+  font-size: 2rem;
+}
+.quote__line {
+  position: relative;
+  top: -8px;
+}
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+  .quote__author {
+    font-size: 2.4rem;
+  }
+  .quote__company {
+    font-size: 1.6rem;
+  }
 }
