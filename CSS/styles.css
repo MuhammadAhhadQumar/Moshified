@@ -640,7 +640,6 @@ h3 {
 /* Feature block */
 .feature-block {
   gap: 4rem 2rem;
-  margin-top: 12rem;
 }
 .feature__banner {
   width: 100%;
@@ -734,4 +733,10 @@ h3 {
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+.callout {
+  transform: translateY(5rem);
+}
+.h {
+  color: var(--heading-color);
 }
